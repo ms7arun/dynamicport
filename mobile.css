@@ -35,6 +35,7 @@ nav{
 }
 li{
     list-style: none;
+    font-size:28px;
 }
 ul{
     display: flex;
