@@ -4,6 +4,8 @@
     --light-bg:white;
     --light-gradient:linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     --contrast:crimson;
+    --large:40px;
+    --medium:25px;
 }
 *{
     font-family: poppins,monospace;
@@ -91,16 +93,16 @@ i{
 }
 
 h1{
-    font-size:3em;
+    font-size:4em;
     transition-duration: 1s;
 }
 h1:hover{
-    font-size: 4em;
+    font-size: 5em;
     transition-duration: 1s;
 }
 
 h2{
-    font-size:2em;
+    font-size:3em;
 }
 .red{
     color:red;
@@ -191,7 +193,7 @@ button{
     background-size: 200% auto;
     border-radius:20px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 3em;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -217,7 +219,7 @@ button:hover{
 }
 .contact-g,.contact-p,.contact-m{
     padding:8px;
-    font-size: 30px;
+    font-size: 3em;
     text-align: center;
     border-radius: 4px;
 }
