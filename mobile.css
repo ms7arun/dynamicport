@@ -1,262 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
-:root{
-    --light-text:black;
-    --light-bg:white;
-    --light-gradient:linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    --contrast:crimson;
-}
-*{
-    font-family: poppins,monospace;
-}
-html{
-    scroll-behavior: smooth;
-}
-.mini{
-    font-size: 24px;
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arun Sankar - web developer	</title>
+        <link rel="stylesheet"  href="mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
 
-body{
-background-color: var(--light-bg);
-color: var(--light-text);
-}
-nav{
-    position:fixed;
-    right: auto;
-    left: auto;
-    bottom: 0;
-    backdrop-filter: blur(10px);
-    height:auto;
-    width:100%;
-    z-index:3;
-    font-size: 1em;
-}
-.menu-name{
-    display: none;
-}
-li{
-    list-style: none;
-}
-ul{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--light-text);
-}
-li>a{
-    color: var(--contrast);
-    font-size: 24px;
-}
-li>a:active{
-    color: black;
-}
-i:hover{
-    transform: scale(1.1);
-    transition-duration:.5s;
+            <nav id="menu">
+                <ul id="menu-list">
+                    <li title="About"><a href="#about" ><i class="far fa-user iconss "></i><p class="menu-name">About</p></a></li>
+                    <li title="Skills"><a href="#skills" ><i class="far fa-file-code iconss "></i><p class="menu-name">Technologies</p></a></li>
+                    <li title="Projects"><a href="#projects" ><i class="far fa-edit iconss "></i><p class="menu-name">Projects</p></a></li>
+                    <li title="Certifications"><a href="#certifications" ><i class="fas fa-medal iconss "></i><p class="menu-name">Certifications</p></a></li>
+                    <li title="Academics"><a href="#academics"><i class="fas fa-graduation-cap iconss "></i><p class="menu-name">Academics</p></a></li>
+                    <li title="Resume"><a href="#resume"><i class="far fa-id-badge iconss "></i><p class="menu-name">Resume</p></a></li>
+                    <li title="Contact"><a href="#contact"><i class="far fa-handshake iconss "></i><p class="menu-name">Contact</p></a></li>
+                </ul>
+            </nav>
+            <section id="about" >
 
-}
-i{
-    height: 30px;
-    width: 30px;
-}
+                 <p>Hey I'm </p> <h1> Arun <span class="red">;</span><span class="orange">)</span></h1>
+                 <h2> <span class="red">&lt;</span> I build things for web.<span class="orange">&#47;&gt;</span></h2>
+                 <div id="des"><p class="mini">A Front-End Web Developer passionate about creating interactive applications and experiences on the web.</p></div>
+             </section>
 
-@media only screen and (min-width: 780px) {
-    nav{
-        height:40px;
-        top: 0px;
-        display:flex;
-        align-items: center;
-        
-    }
-    a>.iconss{
-        display:none;
-    }
-    .menu-name{
-        display:block;
-        color: var(--light-text);
-        transition-duration: .5s;
-    }
-    .menu-name:hover{
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-        padding: 6px;
-        color:var(--contrast);
-        border-radius: 4px;
-    }
-    ul{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+             <section id="skills" >
+                 <div>Check out my</div>
+                 <h2>Skills</h2>
+                 <div id="flex-skills">
+                 <div class="pills">#HTML</div>
+                 <div class="pills">#CSS</div>
+                 <div class="pills">#JS</div>
+                 <div class="pills">#REACT</div>
+                 <div class="pills">#PSD-WEBSITE</div>
+                 <div class="pills">#SEMANTIC</div>
+                 <div class="pills">#RESPONSIVE-WD</div>
+                 <div class="pills">#DYNAMIC</div>
+                 <div class="pills">#AWS</div>
+                </div>
+             </section>
 
-}
+             <section id="projects" >
+                <div>Take a look at my</div> 
+                <h2>Projects</h2>
+                <div id="project-display">
+                    <div class="img-hover"><a href="https://ms7arun.github.io/portfolio/food-website/landingpage.html"><img src="food-thumb.png" height="150px" width="150px" alt="food page-thumbnail"><p class="bold">FOOD DELIVERY</p></a></div>
+                    <div class="img-hover"><a href="https://ms7arun.github.io/portfolio/olaclone/olaclone.html"><img src="ola-thumb.png" height="150px" width="150px" alt="ola-thumbnail"><p class="bold">OLA CLONE</p></a></div>
+                    <div class="img-hover"><a href="https://ms7arun.github.io/portfolio/sphereindia/sphereindia.html"><img src="lite-thumb.png" height="150px" width="150px" alt="Sphere-thumbnail"><p class="bold">SPHERE INDIA</p></a></div>
+                   </div>
+             </section>
 
-h1{
-    font-size:3em;
-    transition-duration: 1s;
-}
-h1:hover{
-    font-size: 4em;
-    transition-duration: 1s;
-}
+             <section id="certifications" >
+                <p>Here's my</p>
+                <h2>Certifications</h2>
+                <div id="certificate-display">
+                    <div class="img-hover"><a href><img src="certificate.png" height=150px width=250px class="image-size" ><p class="bold">RESPONSIVE WEB DESIGN</p></a></div>
+                    <div class="img-hover"><a href><img src="certificate.png" height=150px width=250px class="image-size"><p class="bold">JAVASCRIPT ALGORITHMS <br> & DATA STRUCTURES</p></a></div>
+                    </div>
+            </section>
 
-h2{
-    font-size:2em;
-}
-.red{
-    color:red;
-    font-weight: bold;
-}
+            <section id="academics" >
+                <p>My</p>
+                <h2>Academics</h2>
+                <div id="academics-detail">
+                    <p class="mini">June 2019</p>
+                    <p class="mini"><span class="orange">B.Tech IT </span>><span class="red">65%</span><br>Hindusthan College of Engineering and 
+                        Technology,<br> Coimbatore.</p> 
+                        
+                    <p class="mini">June 2015</p>
+                    <p class="mini"><span class="orange">HSE </span>><span class="red">71%</span><br> SBIOA Hr.Sec School,<br>Trichy.<br></p>
+                    
+                    <p class="mini">June 2013</p>
+                    <p class="mini"><span class="orange">SSLC </span>><span class="red">88%</span><br> SBIOA Hr.Sec School,<br>Trichy.<br></p>
+                    
+                </div>
+            </section>
 
-.orange{
-    color:orange;
-    font-weight:bold;
-}
-
-section{
-    background:var(--light-gradient);
-    background-size: 200% auto;
-    margin: 5%;
-    padding: 5%;
-    border-radius: 20px;
-    transition-duration: .5s;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-}
-section:hover{
-    transition-duration: .5s;
-    box-shadow: none;
-      
-}
-img{
-    border-radius:10px;
-}
-
-#flex-skills{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-}
-.pills{
-    position: relative;
-    background: white;
-    border-radius: 4px;
-    padding:4px;
-    margin:3px;
-    font-weight: bold;
-    font-size: 24px;
-    transition-duration: .5s;
-}
-.pills:hover{
-    transition-duration: .5s;
-    color:var(--light-bg);
-    background:black;
-    cursor: pointer;
-}
-#project-display{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center
-}
-#certificate-display{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    text-align: center;
-    align-items: center;
-}
-.img-hover{
-transition-duration: .5s;
-}
-.img-hover:hover{
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-    transform: scale(1.1);
-    transition-duration:.5s;    
-    border-radius: 10px;
-}
-
-#resume-display{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-content:center;
-    text-align: center;
-    flex-wrap: wrap;
-
-}
-button{
-    background:linear-gradient(to right, #DCE35B 0%, #45B649  51%, #DCE35B  100%);
-    color:white;
-    background-size: 200% auto;
-    border-radius:20px;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 2%;
-    transition-duration: .5s;
-}
-button:hover{
-    transition: 1s;
-    background-position: right center;
-    transform: scale(1.1);
-    color: var(--light-text);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-}
-#contact{
-    margin-bottom:0;
-}
-#contact-flex{
-    display: flex;
-    justify-content:space-around;
-    align-content:center;
-    flex-wrap:wrap;
-    text-align:center;
-}
-.contact-g,.contact-p,.contact-m{
-    padding:8px;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 4px;
-}
-.contact-g{
-    color:#BB001B;
-    background-color:#ddb8be;
-}
-.contact-p{
-    color:#0072b1;
-    background-color:#c8dbe6 ;
-}
-.contact-m{
-    color:#25D366 ;
-    background-color:#ddeee3;
-    
-}
-.contact-hover{
-    filter: grayscale(100%);
-    transition-duration: .5s;
-}
-.contact-hover:hover{
-    transform: scale(1.1);
-    transition-duration: .5s;
-    filter: grayscale(0%);
-}
-#name{
-    margin-top: 0;
-    padding: 5%;
-    margin-bottom:10%;
-    text-align: center;
-}
-@media only screen and (min-width: 780px) {
-#name{
-    margin-bottom: 0;
-    padding: 2%;
-
-}
-}
+            <section id="resume" >   
+            <p>Get a copy of my</p>
+            <h2>Resume</h2>
+            <div id="resume-display">
+            <p>Download my resume here!</p>
+            <a href="https://ms7arun.github.io/portfolio/resume/ArunSankarResume.pdf"><button id="download">Download Resume</button></a> 
+            <p>OR</p>
+            <figure><img src="qr.svg" id="qr" alt="image of qr code"></figure>
+             <p>Scan this QR code to get a copy of my resume.</p>
+            </div> 
+            </section>
+         
+            <section id="contact" >
+                <p>Get in touch with me</p>
+                <h2>Contact</h2>
+                <div id="contact-flex">
+                <div class="contact-hover">
+                    <a href="mailto:arun01sankar@gmail.com"><i class="fas fa-at contact-g"></i><br>
+                    arun01sankar@gmail.com</a>
+                    <p>E-Mail me</p></div>
+                <div class="contact-hover">
+                    <a href="https://www.linkedin.com/in/arun-sankar-b9ba541bb/"><i class="fab fa-linkedin contact-p"></i><br>
+                    View profile</a>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="contact-hover">
+                    <a href="tel:+919994550584"><i class="fas fa-phone-alt contact-p "></i><br>
+                    Say hello</a>
+                    <p>Call</p>
+                </div>
+                <div class="contact-hover">
+                    <a href="https://wa.me/919994550584"><i class="fab fa-whatsapp contact-m"></i><br>
+                    Leave a message</a>
+                    <p>Whatsapp</p>
+                </div>
+                </div>
+            </section>
+            <div id="name">&#169;Arun Sankar</div>
+    </body>
+</html>
