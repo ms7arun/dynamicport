@@ -9,6 +9,8 @@
     font-family: poppins,monospace;
     font-size:var(--medium);
 }
+.mini{
+    font size:28px;
 html{
     scroll-behavior: smooth;
 }
