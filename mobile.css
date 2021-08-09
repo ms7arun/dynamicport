@@ -9,6 +9,7 @@
 }
 *{
     font-family: poppins,monospace;
+    font-size:var(--medium);
 }
 html{
     scroll-behavior: smooth;
