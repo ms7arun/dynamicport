@@ -4,8 +4,6 @@
     --light-bg:white;
     --light-gradient:linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     --contrast:crimson;
-    --large:40px;
-    --medium:25px;
 }
 *{
     font-family: poppins,monospace;
