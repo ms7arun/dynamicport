@@ -13,9 +13,11 @@ html{
 }
 .mini{
     font-size: 24px;
+    padding:2px;
 }
 .bold{
     font-size:20px;
+    padding:2px;
 }
 
 body{
