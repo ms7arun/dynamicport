@@ -257,7 +257,7 @@ button:hover{
     margin-bottom:10%;
     text-align: center;
 }
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 800px) {
 #name{
     margin-bottom: 0;
     padding: 2%;
