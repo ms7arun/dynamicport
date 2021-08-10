@@ -26,8 +26,6 @@ color: var(--light-text);
 }
 nav{
     position:fixed;
-    right: auto;
-    left: auto;
     bottom: 0;
     backdrop-filter: blur(10px);
     height:auto;
@@ -45,6 +43,7 @@ ul{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+    padding:4px;
 }
 a{
     text-decoration: none;
